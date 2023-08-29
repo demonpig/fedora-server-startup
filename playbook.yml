@@ -1,0 +1,9 @@
+---
+
+- name: Fedora Server Startup Playbook
+  hosts: all
+  gather_facts: true
+
+  tasks:
+    - name: Print hello as test
+      ansible.builtin.command: echo hello
